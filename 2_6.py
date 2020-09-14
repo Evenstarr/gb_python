@@ -20,6 +20,7 @@ analytics_data = {key: [] for key in goods_data}
 
 for el in list_goods:
     for key, value in el[1].items():
-        analytics_data[key].append(value)
+        if value not in analytics_data[key]:
+            analytics_data[key].append(value)
 
 print(analytics_data)
