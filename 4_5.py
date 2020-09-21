@@ -11,6 +11,6 @@ def multiply_list(prev_el, el):
     return prev_el * el
 
 
-initial_list = [x for x in range(100, 1001) if x % 2 == 0]
+initial_list = [x for x in range(100, 1001, 2)]
 
 print(reduce(multiply_list, initial_list))
