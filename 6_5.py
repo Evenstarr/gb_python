@@ -3,31 +3,22 @@ class Stationary:
         self.title = title
 
     def draw(self):
-        print("Запуск отрисовки. - Stationary")
+        print(f"Запуск отрисовки. - Stationary {self.title}")
 
 
 class Pen(Stationary):
-    def __init__(self, title):
-        super().__init__(title)
-
     def draw(self):
-        print("Draw with a pen")
+        print(f"Draw with a pen {self.title}")
 
 
 class Pencil(Stationary):
-    def __init__(self, title):
-        super().__init__(title)
-
     def draw(self):
-        print("Draw with a pencil")
+        print(f"Draw with a pencil {self.title}")
 
 
 class Handle(Stationary):
-    def __init__(self, title):
-        super().__init__(title)
-
     def draw(self):
-        print("Draw with a handle")
+        print(f"Draw with a handle {self.title}")
 
 
 base = Stationary("Common")
