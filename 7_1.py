@@ -10,7 +10,7 @@ class Matrix:
         return '\n' + m
 
     def __add__(self, other):
-        if self.size != other.size:
+        if self.size != other.size or len(self.matrix) != len(other.matrix):
             return "Dimension error - can add just matrices with same dimensions"
         else:
             return Matrix([list(map(sum, zip(*t))) for t in zip(self.matrix, other.matrix)])
